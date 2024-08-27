@@ -1,0 +1,26 @@
+>100 --> R$ 1,00
+50 - 100 -> 1%
+50 -> R$ 0,50
+
+------------
+segunda + terca --> quinta
+quarta --> sexta
+quinta --> segunda
+sexta --> terca
+
+segunda + terca --> sexta
+quarta --> segunda
+sexta --> terca
+
+quarta-feira --> nao tem pagamentos
+
+feriado --> pula um dia
+ele acumula no proxima dia util
+
+problematica:
+ver qual dia da semana anterior foi feriado
+
+# Entrada do usuário para feriados
+feriados_input = input("Digite as datas de feriados no formato 'AAAA-MM-DD', separadas por vírgula: ")
+feriados = feriados_input.split(',')
+feriados = pd.to_datetime(feriados)
